@@ -107,6 +107,10 @@ body, html {
   font-family: 'kalendaram';
 }
 
+.vacation-font {
+  font-family: 'rezervedatumu';
+}
+
 .heart-bg {
   background-image: url('bg/heart.png');
   background-position: 82% 70%;
@@ -148,7 +152,7 @@ body, html {
 
       <p class="display-6">Jūlijs 2022</p>
 
-      <img src="img/bezfona2.png" class="text-center"/>
+      <img src="img/bezfona2.png" class="text-center pb-5 mb-5"/>
 <!--
       <div class="row mb-5">
         <div class="col-4 col-sm-12"></div>
@@ -207,7 +211,7 @@ body, html {
 -->
 
       <div class="display-6 pt-5">
-        <p class="pt-5">Talsu novads</p>
+        <p class="">Talsu novads</p>
         <p class="">ielūgumi sekos</p>
       </div>
 
@@ -221,15 +225,27 @@ body, html {
     <div class="vacation-text">
       <h1 class="pt-5 fs-5">Lai nebūtu jālauza galva par dāvanu, tad varam pačukstēt, ka vēlamies mūsu sapņu medusmēnesi</h1>
 
-      <p class="pt-5 fs-3">Lidojums <img src="img/bulta.png" width="100px" class="img-fluid"> 2000 eur</p>
-      <p class="fs-3">Naktsmājas <img src="img/bulta.png" width="100px" class="img-fluid"> 2000 eur</p>
-      <p class="pt-5 fs-3">Rīga ... Maldīvas</p>
+      <p class="pt-5 fs-3 vacation-font">Lidojums <img src="img/bulta.png" width="100px" class="img-fluid"> 2000 eur</p>
+      <p class="fs-3 vacation-font">Naktsmājas <img src="img/bulta.png" width="100px" class="img-fluid"> 2000 eur</p>
+      <div class="pt-5 pb-5 fs-3 vacation-font container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-1">Rīga</div>
+          <div class="col-6">
+            <div class="progress" style="height: 40px;">
+              <div class="progress-bar fs-2" style="background-color:#ff97ff" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">8%</div>
+            </div>
+          </div>
+          <div class="col-1">Maldīvas</div>
+          <div class="col-2"></div>
+        </div>
+      </div>
 
-      <button class="pt-5">Spied te, lai mūs atbalstītu</button>
+      <button type="button" class="btn btn-outline-danger">Spied te, lai mūs atbalstītu</button>
 
-      <p class="pt-5 fs-3">P.S. Aktīvākajiem atbalstītājiem dāvanas no jaunā pāra.</p>
+      <p class="pt-5 fs-5">P.S. Aktīvākajiem atbalstītājiem dāvanas no jaunā pāra.</p>
 
-      <p class="fs-3">PALDIES!</p>
+      <p class="fs-5">PALDIES!</p>
     </div>
   </div>
 
