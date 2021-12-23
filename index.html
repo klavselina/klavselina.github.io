@@ -214,7 +214,11 @@ body, html {
       </div>
 -->
 
-      <div class="display-6 pt-5">
+    <div class="display-4">
+      <span id="dayCount"></span> dienas līdz kāzām
+    </div>
+
+      <div class="fs-3 pt-5">
         <p class="">Talsu novads</p>
         <p class="">ielūgumi sekos</p>
       </div>
@@ -232,15 +236,15 @@ body, html {
       <h1 class="pt-5 display-3 vacation-font">Maldīvas</h1>
 
       <div class="row pt-5">
-        <div class="col-5 text-end fs-1 vacation-font">Lidojums</div>
-        <div class="col-2 text-center"><img src="img/bulta3.png" class="img-fluid" style="max-height:50px"></div>
-        <div class="col-5 text-start fs-1 vacation-font">2000 eur</div>
+        <div class="col-5 text-end fs-1 vacation-font my-auto">Lidojums</div>
+        <div class="col-2 text-center my-auto"><img src="img/bulta3.png" class="img-fluid" style="max-height:50px"></div>
+        <div class="col-5 text-start fs-1 vacation-font"><span class="fw-bold">2000 eur</span><br><span class="">(vienam cilvēkam 700 - 1000 eur)</span></div>
       </div>
 
       <div class="row">
-        <div class="col-5 text-end fs-1 vacation-font">Naktsmājas</div>
-        <div class="col-2 text-center"><img src="img/bulta3.png" class="img-fluid" style="max-height:50px"></div>
-        <div class="col-5 text-start fs-1 vacation-font">2000 eur</div>
+        <div class="col-5 text-end fs-1 vacation-font my-auto">Naktsmājas</div>
+        <div class="col-2 text-center my-auto"><img src="img/bulta3.png" class="img-fluid" style="max-height:50px"></div>
+        <div class="col-5 text-start fs-1 vacation-font"><span class="fw-bold">2000 eur</span><br><span>(3 - 4 naktis "viss iekļauts" kūrorts)</span></div>
       </div>
 
       <div class="pt-5 pb-5 fs-1 vacation-font container">
@@ -265,6 +269,19 @@ body, html {
       <p class="fs-4">PALDIES!</p>
     </div>
   </div>
+
+  <script>
+  const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  const firstDate = new Date(2022, 6, 2);
+  const secondDate = new Date((new Date()).toDateString());
+
+  const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+
+  console.log(firstDate);
+  console.log(secondDate);
+
+  document.getElementById("dayCount").innerText = diffDays;
+</script>
 
 </body>
 </html>
